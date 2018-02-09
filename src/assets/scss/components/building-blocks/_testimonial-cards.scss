@@ -1,0 +1,17 @@
+#testimonial-cards {
+  background-color: $light-gray;
+  padding: 4rem;
+  .fa-twitter {
+    color: #2AA3F0;
+  }
+}
+
+.card-header, .card-title {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  img {
+    margin-right: 1rem;
+  }
+}
+
