@@ -61,13 +61,21 @@
 //  56. Xy Grid
 
 @import 'util/util';
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
 
 // 1. Global
 // ---------
 
-$global-font-size: 110%;
-$global-width: rem-calc(1200);
+$rem-base: rem-calc(16);
+$base-small-font-size: rem-calc($rem-base - 4);
+$base-medium-font-size: rem-calc($rem-base - 2);
+$base-font-size: 16px;
+$base-large-font-size: rem-calc($rem-base + 2);
+$base-xlarge-font-size: rem-calc($rem-base + 4);
+$base-transition: 0.3s;
+$vertical-gutter: $rem-base;
+$global-font-size: 100%;
+$global-width: rem-calc(1140);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #358ED7,
@@ -85,7 +93,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $text;
-$body-font-family: Roboto, Arial, sans-serif;
+$body-font-family: Roboto, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -101,6 +109,7 @@ $global-prototype-breakpoints: false;
 $global-button-cursor: auto;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
+$base-transition: .3s;
 
 @include add-foundation-colors;
 
@@ -870,3 +879,11 @@ $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;
+
+// Component: nav burger button
+$burger-color             : $headings;
+$burger-background        : transparent;
+$burger-hover-background  : transparent;
+$burger-size              : 1.3rem;
+$burger-weight            : 3px; // size of stripes
+$burger-padding           : 0;

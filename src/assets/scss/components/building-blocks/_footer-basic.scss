@@ -1,5 +1,5 @@
 footer {
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@ footer {
     align-items: center;
     justify-content: space-between;
   }
-  li a {
+  a, li a {
     color: $text;
   }
   .fa-2x {

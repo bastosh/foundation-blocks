@@ -44,20 +44,6 @@
     padding-left: 3rem;
   }
 
-  .testimonial-slide-quotation {
-    font-size: 1.2rem;
-    position: relative;
-
-    &::before {
-      content: "“";
-      font-size: 6rem;
-      color: lighten($black, 80%);
-      position: absolute;
-      top: -3rem;
-      left: -3rem;
-    }
-  }
-
   .testimonial-slide-author-container {
     display: flex;
 
