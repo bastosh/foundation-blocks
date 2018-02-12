@@ -5,5 +5,3 @@ bower_components
 dist
 *.swp
 .idea
-yarn.lock
-package-lock.json
